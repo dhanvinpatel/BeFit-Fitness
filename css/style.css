@@ -1,0 +1,805 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --rich-black-color: #0B090A;
+    --eerie-black-color: #161A1D;
+    --imperial-red-color: #E5383B;
+    --cultured-color: #F5F3F4;
+    --youtube-color: #FF0000;
+    --instagram-color: #F77737;
+    --twitter-color: #1DA1F2;
+    --facebook-color: #4267B2;
+}
+
+body {
+    min-width: 100%;
+    padding-top: 50px;
+    overscroll-behavior: none;
+    background-color: var(--cultured-color);
+}
+
+/* Navigation bar styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1;
+    font-size: 1.1rem;
+    background-color: var(--rich-black-color);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 20px 30px;
+    margin-right: 10px;
+}
+
+header nav li a:hover {
+    color: var(--imperial-red-color);
+}
+
+header nav a {
+    color: var(--cultured-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 1em;
+    margin: -2em;
+}
+
+.login-media {
+    color: var(--cultured-color);
+    display: flex;
+}
+
+.login-media div {
+    margin-left: 20px;
+}
+
+.login a {
+    color: var(--cultured-color);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.login-media a:visited {
+    text-decoration: none;
+}
+
+.current {
+    color: var(--imperial-red-color);
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    height: auto;
+    top: 500px;
+    position: relative;
+    color: var(--cultured-color);
+    background-color: var(--rich-black-color);
+    border: 1px solid var(--rich-black-color);
+}
+
+.footer-setting {
+    top: 0;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 60px;
+}
+
+.gym-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media div {
+    margin: 20px 0;
+    padding-right: 15px;
+}
+
+.social-media div:first-child {
+    padding-left: 0;
+}
+
+.company-info .title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.hours {
+    line-height: 25px;
+}
+
+.company-contact {
+    line-height: 25px;
+}
+
+.company-contact .address {
+    margin-bottom: 20px;
+}
+
+.company-contact p a {
+    color: var(--cultured-color);
+    text-decoration: none;
+}
+
+.website-menu ul {
+    list-style-type: none;
+}
+
+.website-menu ul li a {
+    color: var(--cultured-color);
+    line-height: 25px;
+    text-decoration: none;
+}
+
+footer hr {
+    background-color: var(--cultured-color);
+    border: 0.5px solid var(--cultured-color);
+}
+
+.copyrights {
+    color: var(--cultured-color);
+    font-size: 1rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Sidebar social media styling */
+aside nav {
+    position: fixed;
+    width: 40px;
+    top: 300px;
+    z-index: 1;
+}
+
+aside li {
+    height: 50px;
+    position: relative;
+    list-style: none;
+}
+
+aside li a {
+    color: var(--cultured-color);
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.4s ease;
+}
+
+aside li:nth-child(1) a {
+    background: var(--youtube-color);
+}
+
+aside li:nth-child(2) a {
+    background: var(--instagram-color);
+}
+
+aside li:nth-child(3) a {
+    background: var(--twitter-color);
+}
+
+aside li:nth-child(4) a {
+    background: var(--facebook-color);
+}
+
+aside li a i {
+    position: absolute;
+    padding-top: 18px;
+    margin-left: 7px;
+}
+
+aside li a span {
+    display: none;
+    font-size: 1.1rem;
+    margin-left: 50px;
+    padding-top: 15px;
+}
+
+aside a:hover {
+    width: 140px;
+}
+
+aside li a:hover span {
+    display: block;
+}
+
+/* Home page styling */
+.home {
+    width: 100%;
+    height: 550px;
+    top: 58px;
+    position: fixed;
+    background-image: url(../images/home-background.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: var(--rich-black-color);
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.home-content .gym-moto {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-family: 'Lobster', 'Times New Roman', Times, serif;
+}
+
+.home-content .gym-name {
+    margin-left: 20px;
+    margin: 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+
+.classes-info {
+    width: 50%;
+    font-size: 1.3rem;
+    color: var(--rich-black-color);
+}
+
+.classes-option {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.classes-option a {
+    display: inline-block;
+    width: 165px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--rich-black-color);
+    text-decoration: none;
+    background-color: var(--imperial-red-color);
+    border-radius: 5px;
+    padding: 14px;
+}
+
+.classes-option a:hover {
+    color: var(--cultured-color);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    top: 560px;
+    height: auto;
+    position: relative;
+    color: var(--cultured-color);
+    background-color: var(--eerie-black-color);
+}
+
+.content-first {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 70px;
+    padding: 20px 0;
+}
+
+.content-first img {
+    min-width: 400px;
+    margin-right: 300px;
+    border-radius: 5%;
+    box-shadow: 15px 15px 15px var(--rich-black-color);
+}
+
+.training-info {
+    margin-top: 100px;
+}
+
+.training-info div {
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.training-info span {
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
+    color: var(--imperial-red-color);
+}
+
+.training-info p {
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.training-record {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.record span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.record span:first-of-type {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.content-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    padding: 20px 0;
+}
+
+.choice-heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.choice-heading span {
+    text-transform: none;
+    font-style: italic;
+}
+
+.choice-heading:last-child {
+    text-transform: uppercase;
+}
+
+.content-second p {
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin-bottom: 80px;
+}
+
+.class-choice {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.class-select {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 40px 120px;
+    border-radius: 0 30px 0 30px;
+    background-color: var(--imperial-red-color);
+    box-shadow: 15px 15px 15px var(--rich-black-color);
+}
+
+.class-select span {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.class-select a {
+    color: var(--eerie-black-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--cultured-color);
+    border-radius: 0 30px 0 30px;
+}
+
+.class-select a:hover {
+    color: var(--cultured-color);
+    background-color: var(--eerie-black-color);
+}
+
+/* Classes */
+.person-online {
+    color: var(--rich-black-color);
+    padding-top: 100px;
+    background-color: var(--eerie-black-color);
+}
+
+.person-online .heading {
+    margin: 0 200px 50px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cultured-color);
+}
+
+.person-online .heading span {
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
+    color: var(--imperial-red-color);
+}
+
+.person-online p {
+    width: 30%;
+    margin: 0 200px 100px;
+    font-size: 1.2rem;
+    line-height: 25px;
+    color: var(--cultured-color);
+}
+
+.person-online p span {
+    line-height: 50px;
+    color: var(--imperial-red-color);
+}
+
+.person-online .classes {
+    padding: 150px 100px 10px;
+    background-color: var(--cultured-color);
+}
+
+.person-online .class {
+    display: flex;
+    align-items: center;
+    margin: 20px 100px;
+    border-top: 1px solid var(--eerie-black-color);
+}
+
+.person-online .name {
+    width: 50%;
+    margin: 50px 0 50px 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.person-online .duration-price {
+    width: 30%;
+    text-align: center;
+}
+
+.person-online .duration {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.person-online .price {
+    font-size: 1.2rem;
+}
+
+.person-online a {
+    width: 15%;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cultured-color);
+    background-color: var(--imperial-red-color);
+    border-radius: 15px;
+}
+
+.class-link {
+    justify-content: center;
+}
+
+.class-link a {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 50%;
+    border: none;
+    color: var(--rich-black-color);
+    background-color: unset;
+}
+
+.class-link a:hover {
+    color: var(--rich-black-color);
+}
+
+.class-link span {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.in-studio img {
+    float: right;
+    margin-top: -200px;
+    margin-right: 100px;
+    border-radius: 5px 150px / 140px;
+}
+
+.at-home img {
+    float: right;
+    margin-top: -200px;
+    margin-right: 100px;
+    border-radius: 200px 200px 10px 10px;
+}
+
+/* Plans page styling */
+.plans {
+    background-color: var(--eerie-black-color);
+    color: var(--cultured-color);
+}
+
+.plans-heading {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px;
+}
+
+.membership {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 150px;
+}
+
+.silver-plan, .gold-plan, .platinum-plan {
+    background-color: var(--cultured-color);
+    width: 22%;
+    text-align: center;
+}
+
+.plan-upper {
+    background-color: var(--imperial-red-color);
+}
+
+.plan-lower {
+    color: black;
+    margin: 20px 0;
+    line-height: 40px;
+}
+
+.plan-name {
+    font-size: 1.6rem;
+    padding: 40px 20px 20px 20px;
+}
+
+.plan-price {
+    font-size: 60px;
+}
+
+.dollar-sign {
+    font-size: 25px;
+}
+
+.price-month {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px 0 25px;
+}
+
+.plan-select-btn {
+    width: 80%;
+    font-size: 1.8rem;
+    margin: 25px 0;
+    padding: 5px 0;
+    background-color: transparent;
+    color: var(--cultured-color);
+    border: 2px solid var(--cultured-color);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 var(--imperial-red-color);
+    transition: 0.7s ease-out;
+}
+
+.plan-select-btn:hover {
+    color: var(--imperial-red-color);
+    box-shadow: inset 220px 0 0 0 var(--cultured-color);
+}
+
+/* About page styling */
+.about-befit {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    align-items: center;
+    color: var(--cultured-color);
+    background-color: var(--eerie-black-color);
+}
+
+.about-heading {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-befit p {
+    width: 45%;
+    font-size: 1.1rem;
+    line-height: 25px;
+    text-align: center;
+}
+
+.befit-story {
+    display: flex;
+    width: 80%;
+    margin: -100px auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cultured-color);
+}
+
+.story {
+    height: 676px;
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cultured-color);
+}
+
+.story div {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.story p {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align:left;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.values {
+    padding-top: 150px;
+    padding-bottom: 80px;
+    color: var(--cultured-color);
+    background-color: var(--eerie-black-color);
+}
+
+.core-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.values-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 80px;
+}
+
+.values-container {
+    display: grid;
+    grid-template-columns: 400px 400px;
+}
+
+.values-container .item {
+    padding: 0 30px 50px 30px;
+    text-align: center;
+}
+
+.item-heading {
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.values-container .item p {
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+/* Contact page styling */
+.contact {
+    background-color: var(--eerie-black-color);
+    color: var(--cultured-color);
+}
+
+.gym-contact {
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 30px;
+}
+
+.contact-heading {
+    padding: 40px 0;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input {
+    line-height: 30px;
+    border-radius: 10px;
+    background-color: var(--cultured-color);
+    border: 5px solid var(--imperial-red-color);
+}
+
+textarea {
+    border-radius: 10px;
+    background-color: var(--cultured-color);
+    border: 5px solid var(--imperial-red-color);
+}
+
+.contact-submit input {
+    border: none;
+}
+
+input[type=submit] {
+    font-size: 1rem;
+    color: var(--cultured-color);
+    text-transform: uppercase;
+    background-color: var(--imperial-red-color);
+    padding: 10px 30px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+input[type=submit]:hover {
+    opacity: 0.7;
+}
+
+.first-name, .last-name, .contact-email, .contact-phone, .message {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.required::after {
+    content: " *";
+}
+
+/* Social media links styling */
+.youtube {
+    color: var(--youtube-color);
+}
+
+.instagram {
+    color: var(--instagram-color);
+}
+
+.twitter {
+    color: var(--twitter-color);
+}
+
+.facebook {
+    color: var(--facebook-color);
+}
