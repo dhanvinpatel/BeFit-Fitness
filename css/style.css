@@ -52,6 +52,10 @@ header nav li a:hover {
     color: var(--imperial-red-color);
 }
 
+header nav li a:focus {
+    color: var(--imperial-red-color);
+}
+
 header nav a {
     color: var(--cultured-color);
     text-decoration: none;
@@ -231,7 +235,15 @@ aside a:hover {
     width: 140px;
 }
 
+aside a:focus {
+    width: 140px;
+}
+
 aside li a:hover span {
+    display: block;
+}
+
+aside li a:focus span {
     display: block;
 }
 
@@ -440,6 +452,11 @@ aside li a:hover span {
     background-color: var(--eerie-black-color);
 }
 
+.class-select a:focus {
+    color: var(--cultured-color);
+    background-color: var(--eerie-black-color);
+}
+
 /* Classes */
 .person-online {
     color: var(--rich-black-color);
@@ -625,7 +642,14 @@ aside li a:hover span {
 .plan-select-btn:hover {
     color: var(--imperial-red-color);
     box-shadow: inset 220px 0 0 0 var(--cultured-color);
+    cursor: pointer;
 }
+
+.plan-select-btn:focus {
+    color: var(--imperial-red-color);
+    box-shadow: inset 220px 0 0 0 var(--cultured-color);
+}
+
 
 /* About page styling */
 .about-befit {
@@ -774,6 +798,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+input[type=submit]:focus {
     opacity: 0.7;
 }
 
