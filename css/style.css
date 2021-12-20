@@ -314,6 +314,10 @@ aside li a:focus span {
     color: var(--cultured-color);
 }
 
+.classes-option a:focus {
+    color: var(--cultured-color);
+}
+
 .content {
     display: flex;
     justify-content: center;
