@@ -1,0 +1,165 @@
+/* Sign in page responsive styling */
+@media only screen and (min-width: 769px) {
+    .signin-page {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .signin-header {
+        all: unset;
+        display: block;
+        margin: 16px 0 0 30px;
+    }
+    
+    .signin-header a {
+        color: var(--imperial-red-color);
+        font-family: 'Lobster', 'Times New Roman', Times, serif;
+    }
+    
+    .signin-header a i {
+        margin-left: -10px;
+        transform: rotate(40deg);
+    }
+    
+    .befit-logo {
+        font-size: 1.8rem;
+        text-decoration: none;
+    }
+    
+    .card-layout {
+        margin: 0 auto;
+        width: 350px;
+        padding: 22px 22px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+        font-family: 'Hind Siliguri', sans-serif;
+    }
+
+    .signin-container h1 {
+        margin-bottom: 35px;
+    }
+    
+    .form-input {
+        position: relative;
+        margin: 20px 0;
+    }
+    
+    .form-input>input {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        border: 1.5px solid var(--rich-black-color);
+        padding: 25px 22px 7px 16px;
+        background-color: transparent;
+    }
+    
+    .form-input>label {
+        font-size: 1.3rem;
+        line-height: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 22px 0 0 17px;
+        color: rgba(0,0,0,0.3);
+        transition: 0.2s all;
+        font-family: 'Hind Siliguri', sans-serif;
+    }
+    
+    .form-input input:focus ~ label,
+    .form-input input:not(:placeholder-shown) + label {
+        top: -11px;
+        font-size: 0.9rem;
+        color: rgba(0,0,0,0.9);
+    }
+    
+    .form-input>input:focus {
+        outline: none;
+        border: 1.5px solid var(--imperial-red-color);
+    }
+    
+    .forgot-password {
+        position: relative;
+        text-decoration: none;
+        color: var(--imperial-red-color);
+    }
+    
+    .form-control {
+        display: block;
+        margin: 15px 0;
+    }
+    
+    .btn-signin {
+        width: 100%;
+        height: 50px;
+        font-size: 1.1rem;
+        border-radius: 25px;
+        padding: 0 10px;
+        cursor: pointer;
+        border: none;
+        color: var(--cultured-color);
+        background-color: var(--imperial-red-color);
+    }
+    
+    .btn-signin:hover, .btn-signin:focus {
+        background-color: #a70104;
+    }
+    
+    .alternate-signin-container .signin-divider {
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
+    }
+    
+    .alternate-signin-container .signin-divider::before,
+    .alternate-signin-container .signin-divider::after {
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: rgba(0,0,0,0.2);
+    }
+    
+    .alternate-signin-container .signin-divider .text {
+        font-size: 1.1rem;
+        margin: 0 10px;
+    }
+    
+    .btn-signin-google {
+        margin: 20px 0 30px;
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+        border-radius: 25px;
+        padding: 0 10px;
+        cursor: pointer;
+        border: 1px solid var(--rich-black-color);
+        background-color: var(--cultured-color);
+    }
+    
+    .btn-signin-google:hover, .btn-signin-google:focus {
+        border: 1.5px solid var(--rich-black-color);
+        background-color: #e4e4e4;
+    }
+    
+    .btn-signin-google:hover i, .btn-signin-google:focus i {
+        color: #F4B400;
+    }
+    
+    .btn-signin-google i {
+        color: #4285F4;
+        margin-right: 10px;
+    }
+    
+    .join-now {
+        text-align: center;
+    }
+    
+    .join-now a {
+        margin-left: 5px;
+        text-decoration: none;
+        color: var(--imperial-red-color);
+    }
+}
