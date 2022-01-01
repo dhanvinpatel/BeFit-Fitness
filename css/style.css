@@ -48,11 +48,7 @@ header nav li {
     margin-right: 10px;
 }
 
-header nav li a:hover {
-    color: var(--imperial-red-color);
-}
-
-header nav li a:focus {
+header nav li a:hover, header nav li a:focus {
     color: var(--imperial-red-color);
 }
 
@@ -79,7 +75,10 @@ header nav a {
 .login a {
     color: var(--cultured-color);
     text-decoration: none;
-    margin-left: 10px;
+}
+
+.login i {
+    margin-right: 10px;
 }
 
 .login-media a:visited {
@@ -112,11 +111,38 @@ footer {
 }
 
 .gym-name {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* text-transform: uppercase; */
+    color: var(--imperial-red-color);
+    font-family: 'Lobster', 'Times New Roman', Times, serif;
 }
+
+
+
+
+
+
+
+
+/*  */
+.gym-name i {
+    margin-left: -2px;
+    transform: rotate(60deg);
+}
+
+/*  */
+
+
+
+
+
+
+
+
+
+
 
 .social-media {
     display: flex;
@@ -231,19 +257,12 @@ aside li a span {
     padding-top: 15px;
 }
 
-aside a:hover {
+aside a:hover, aside a:focus {
+    outline: none;
     width: 140px;
 }
 
-aside a:focus {
-    width: 140px;
-}
-
-aside li a:hover span {
-    display: block;
-}
-
-aside li a:focus span {
+aside li a:hover span, aside li a:focus span {
     display: block;
 }
 
@@ -310,11 +329,7 @@ aside li a:focus span {
     padding: 14px;
 }
 
-.classes-option a:hover {
-    color: var(--cultured-color);
-}
-
-.classes-option a:focus {
+.classes-option a:hover, .classes-option a:focus {
     color: var(--cultured-color);
 }
 
@@ -451,12 +466,7 @@ aside li a:focus span {
     border-radius: 0 30px 0 30px;
 }
 
-.class-select a:hover {
-    color: var(--cultured-color);
-    background-color: var(--eerie-black-color);
-}
-
-.class-select a:focus {
+.class-select a:hover, .class-select a:focus {
     color: var(--cultured-color);
     background-color: var(--eerie-black-color);
 }
@@ -537,6 +547,10 @@ aside li a:focus span {
     color: var(--cultured-color);
     background-color: var(--imperial-red-color);
     border-radius: 15px;
+}
+
+.class .duration-price + a:hover, .class .duration-price + a:focus {
+    background-color: #a70104;
 }
 
 .class-link {
@@ -650,6 +664,7 @@ aside li a:focus span {
 }
 
 .plan-select-btn:focus {
+    outline: none;
     color: var(--imperial-red-color);
     box-shadow: inset 220px 0 0 0 var(--cultured-color);
 }
@@ -769,19 +784,23 @@ aside li a:focus span {
     font-size: 2.5rem;
 }
 
-label {
+.contact-info label {
     font-size: 1rem;
     margin-bottom: 5px;
 }
 
-input {
+.contact-info input {
+    padding: 0 10px;
+    outline: none;
     line-height: 30px;
     border-radius: 10px;
     background-color: var(--cultured-color);
     border: 5px solid var(--imperial-red-color);
 }
 
-textarea {
+.contact-info textarea {
+    outline: none;
+    padding: 10px 10px;
     border-radius: 10px;
     background-color: var(--cultured-color);
     border: 5px solid var(--imperial-red-color);
@@ -791,7 +810,7 @@ textarea {
     border: none;
 }
 
-input[type=submit] {
+.contact-info input[type=submit] {
     font-size: 1rem;
     color: var(--cultured-color);
     text-transform: uppercase;
@@ -801,13 +820,13 @@ input[type=submit] {
     margin-bottom: 100px;
 }
 
-input[type=submit]:hover {
-    opacity: 0.7;
+.contact-info input[type=submit]:hover {
+    background-color: #a70104;
     cursor: pointer;
 }
 
-input[type=submit]:focus {
-    opacity: 0.7;
+.contact-info input[type=submit]:focus {
+    background-color: #a70104;
 }
 
 .first-name, .last-name, .contact-email, .contact-phone, .message {
@@ -835,4 +854,154 @@ input[type=submit]:focus {
 
 .facebook {
     color: var(--facebook-color);
+}
+
+/* Sign in page styling */
+.signin-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.signin-header {
+    all: unset;
+    display: block;
+    margin: 16px 0 0 30px;
+}
+
+.signin-header a {
+    color: var(--imperial-red-color);
+    font-family: 'Lobster', 'Times New Roman', Times, serif;
+}
+
+.signin-header a i {
+    margin-left: -10px;
+    transform: rotate(40deg);
+}
+
+.befit-logo {
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.card-layout {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 412px;
+    padding: 20px 30px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.signin-container h1 {
+    margin-bottom: 35px;
+}
+
+.form-input {
+    position: relative;
+    margin: 20px 0;
+}
+
+.form-input>input {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 1.5px solid var(--rich-black-color);
+    padding: 25px 22px 7px 16px;
+    background-color: transparent;
+}
+
+.form-input>label {
+    font-size: 1.3rem;
+    line-height: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 22px 0 0 17px;
+    color: rgba(0,0,0,0.3);
+    transition: 0.2s all;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.form-input input:focus ~ label,
+.form-input input:not(:placeholder-shown) + label {
+    top: -11px;
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.9);
+}
+
+.form-input>input:focus {
+    outline: none;
+    border: 1.5px solid var(--imperial-red-color);
+}
+
+.forgot-password {
+    position: relative;
+    text-decoration: none;
+    color: var(--imperial-red-color);
+}
+
+.form-control {
+    display: block;
+    margin: 15px 0;
+}
+
+.btn-signin {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    border: none;
+    color: var(--cultured-color);
+    background-color: var(--imperial-red-color);
+}
+
+.alternate-signin-container .signin-divider {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.alternate-signin-container .signin-divider::before,
+.alternate-signin-container .signin-divider::after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.alternate-signin-container .signin-divider .text {
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+
+.btn-signin-google {
+    margin: 20px 0 50px;
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    border: 1px solid var(--rich-black-color);
+    background-color: var(--cultured-color);
+}
+
+.btn-signin-google i {
+    color: #4285F4;
+    margin-right: 10px;
+}
+
+.join-now {
+    text-align: center;
+}
+
+.join-now a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: var(--imperial-red-color);
 }
