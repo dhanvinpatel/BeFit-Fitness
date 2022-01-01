@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to stylesheets. -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- Link to Font Awesome CDN. -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Link to Google Fonts. -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+    <!-- Link to favicon. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Sign In &#124; BeFit Fitness</title>
+</head>
+
+<body class="signin-page">
+    <header class="signin-header">
+        <a href="index.html" class="befit-logo">BeFit Fitness <i class="fas fa-heart"></i></a>
+    </header>
+
+    <main>
+        <div class="card-layout">
+            <div class="signin-container">
+                <h1>Sign in</h1>
+                <form class="signin-form">
+                    <div class="form-input">
+                        <input type="email" name="session_key" id="username" autocomplete="off" placeholder="" required
+                            aria-label="Email">
+                        <label for="username" aria-hidden="true">Email</label>
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="session_password" placeholder="" required aria-label="Password">
+                        <label for="password" aria-hidden="true">Password</label>
+                    </div>
+                    <a class="forgot-password" href="#">Forgot password&#63;</a>
+                    <div class="form-control">
+                        <button class="btn-signin" type="submit" aria-label="Sign in">Sign in</button>
+                    </div>
+                </form>
+
+                <div class="alternate-signin-container">
+                    <div class="signin-divider">
+                        <span class="text">or</span>
+                    </div>
+                    <button class="btn-signin-google" type="button"> <i class="fab fa-google"></i> Sign in with
+                        Google</button>
+                </div>
+                <div class="join-now">
+                    New to BeFit&#63;
+                    <a href="#">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
