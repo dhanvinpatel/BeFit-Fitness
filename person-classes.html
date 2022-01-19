@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to stylesheet. -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/layout.css"> -->
     <!-- Link to Font Awesome CDN. -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -17,12 +18,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- Link to JavaScript. -->
+    <script src="js/code.js"></script>
     <title>In Person Classes &#124; BeFit Fitness</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <div class="main-navigation">
+            <div class="tribar" id="tribarNav" onclick="openNavigation()"><i class="fas fa-bars"></i></div>
+            <div class="gym-logo"><a href="index.html">Befit Fitness<i class="fas fa-heart"></i></a></div>
+        </div>
+        <nav id="sideNavigation">
+            <div class="close-button" onclick="closeNavigation()">&#10006;</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="person-classes.html" class="current">Classes</a></li>
@@ -44,56 +52,58 @@
 
     <main>
         <div class="person-online in-studio">
-            <div>
+            <div class="studio-home-info">
                 <div class="heading"> Feel the <br> <span>Studio</span> Vibes</div>
                 <p><span>Specialized. Customized. Effective.</span> <br> Studio fitness is the best way to work out. You
                     will be coached through a programmed workout designed to maximize efficiency and deliver results.
                     It's working out taken to the next level.</p>
             </div>
             <img src="images/classes-studio-workout.jpg" alt="Group of people doing yoga in a studio." width="400">
-            <div class="classes">
-                <div class="class">
-                    <div class="name">Strength</div>
-                    <div class="duration-price">
-                        <div class="duration">1 hr</div>
-                        <div class="price">&#36;20</div>
+            <div class="classes-container">
+                <div class="classes">
+                    <div class="class">
+                        <div class="name">Strength</div>
+                        <div class="duration-price">
+                            <div class="duration">1 hr</div>
+                            <div class="price">&#36;20</div>
+                        </div>
+                        <a href="#">Book Now</a>
                     </div>
-                    <a href="#">Book Now</a>
-                </div>
-                <div class="class">
-                    <div class="name">Hiit</div>
-                    <div class="duration-price">
-                        <div class="duration">1 hr</div>
-                        <div class="price">&#36;20</div>
+                    <div class="class">
+                        <div class="name">Hiit</div>
+                        <div class="duration-price">
+                            <div class="duration">1 hr</div>
+                            <div class="price">&#36;20</div>
+                        </div>
+                        <a href="#">Book Now</a>
                     </div>
-                    <a href="#">Book Now</a>
-                </div>
-                <div class="class">
-                    <div class="name">Yoga</div>
-                    <div class="duration-price">
-                        <div class="duration">1 hr</div>
-                        <div class="price">&#36;20</div>
+                    <div class="class">
+                        <div class="name">Yoga</div>
+                        <div class="duration-price">
+                            <div class="duration">1 hr</div>
+                            <div class="price">&#36;20</div>
+                        </div>
+                        <a href="#">Book Now</a>
                     </div>
-                    <a href="#">Book Now</a>
-                </div>
-                <div class="class">
-                    <div class="name">Meditation</div>
-                    <div class="duration-price">
-                        <div class="duration">1 hr</div>
-                        <div class="price">&#36;20</div>
+                    <div class="class">
+                        <div class="name">Meditation</div>
+                        <div class="duration-price">
+                            <div class="duration">1 hr</div>
+                            <div class="price">&#36;20</div>
+                        </div>
+                        <a href="#">Book Now</a>
                     </div>
-                    <a href="#">Book Now</a>
-                </div>
-                <div class="class">
-                    <div class="name">Cardio</div>
-                    <div class="duration-price">
-                        <div class="duration">1 hr</div>
-                        <div class="price">&#36;20</div>
+                    <div class="class">
+                        <div class="name">Cardio</div>
+                        <div class="duration-price">
+                            <div class="duration">1 hr</div>
+                            <div class="price">&#36;20</div>
+                        </div>
+                        <a href="#">Book Now</a>
                     </div>
-                    <a href="#">Book Now</a>
-                </div>
-                <div class="class class-link">
-                    <a href="online-classes.html">View Online Classes <span>&#8594;</span></a>
+                    <div class="class class-link">
+                        <a href="online-classes.html">View Online Classes <span>&#8594;</span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,7 +127,9 @@
     <footer class="footer-setting">
         <div class="company-info">
             <div class="company-name-social">
-                <div class="gym-name">Befit <br> Fitness<i class="fas fa-heart"></i></div>
+                <hr>
+                <div class="gym-name"><a href="index.html">Befit <span>Fitness</span><i class="fas fa-heart"></i></a>
+                </div>
                 <div class="social-media">
                     <div><a href="https://www.youtube.com" class="youtube"><i class="fab fa-youtube fa-lg"></i></a>
                     </div>
@@ -131,25 +143,27 @@
             </div>
             <div class="company-hours">
                 <div class="title">Hours of Operation</div>
-                <div class="hours">
+                <div class="content-height">
                     <div>Mon-Thu: 7AM to 9PM</div>
                     <div>Friday: 7AM to 7PM</div>
-                    <div>Sat-Sun: 9AM to 9AM</div>
+                    <div>Sat-Sun: 9AM to 9PM</div>
                 </div>
             </div>
             <div class="company-contact">
                 <div class="title">Contact Us</div>
-                <p class="address">1508 Spin Ball Street <br> Atlanta, GA 20211</p>
-                <p>
-                    Mail: <a
-                        href="mailto:befitfitness@gmail.com?subject=Feedback&body=Message?">befitfitness@gmail.com</a>
-                </p>
-                <div>Tel: 123-456-7890</div>
-                <div>Fax: 123-456-7890</div>
+                <div class="content-height">
+                    <p>1508 Spin Ball Street <br> Atlanta, GA 20211</p>
+                    <p>
+                        Mail: <a
+                            href="mailto:befitfitness@gmail.com?subject=Feedback&body=Message?">befitfitness@gmail.com</a>
+                    </p>
+                    <div>Tel: 123-456-7890</div>
+                    <div>Fax: 123-456-7890</div>
+                </div>
             </div>
             <div class="website-menu">
                 <div class="title">Menu</div>
-                <ul>
+                <ul class="content-height">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="person-classes.html">Classes</a></li>
                     <li><a href="plans.html">Plans</a></li>
@@ -157,9 +171,11 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <div class="copyrights">
+                <hr>
+                <p>&#169; 2021 by BeFit Fitness.</p>
+            </div>
         </div>
-        <hr>
-        <p class="copyrights">&#169; 2021 by BeFit Fitness.</p>
     </footer>
 </body>
 
