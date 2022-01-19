@@ -44,18 +44,18 @@ header .main-navigation {
     color: var(--cultured-color);
 }
 
-.main-navigation .gym-logo {
+.main-navigation .fitness-logo {
     margin-top: 11px;
     font-size: 20px;
     font-family: 'Lobster', 'Times New Roman', Times, serif;
 }
 
-.main-navigation .gym-logo a {
+.main-navigation .fitness-logo a {
     color: var(--imperial-red-color);
     text-decoration: none;
 }
 
-.main-navigation .gym-logo i {
+.main-navigation .fitness-logo i {
     transform: rotate(46deg);
 }
 
@@ -177,7 +177,7 @@ footer {
     grid-area: logo;
 }
 
-.company-info .gym-name {
+.company-info .fitness-name {
     margin-top: 20px;
     text-align: center;
     font-size: 1.2rem;
@@ -186,7 +186,12 @@ footer {
     font-family: 'Lobster', 'Times New Roman', Times, serif;
 }
 
-.company-info .gym-name i {
+.company-info .fitness-name a {
+    color: var(--imperial-red-color);
+    text-decoration: none;
+}
+
+.company-info .fitness-name i {
     margin-left: 2px;
     transform: rotate(46deg);
 }
@@ -285,7 +290,7 @@ aside li a span {
     align-items: center;
 }
 
-.home-content .gym-moto {
+.home-content .fitness-moto {
     max-width: 235px;
     text-align: center;
     margin-top: 10px;
@@ -294,7 +299,7 @@ aside li a span {
     font-family: 'Lobster', 'Times New Roman', Times, serif;
 }
 
-.home-content .gym-name {
+.home-content .fitness-name {
     display: none;
 }
 
@@ -449,57 +454,69 @@ aside li a span {
     border-radius: 0 30px 0 30px;
 }
 
-/* Classes */
-/* .person-online {
+/* Classes page styling */
+.person-online {
+    padding-top: 50px;
     color: var(--rich-black-color);
-    padding-top: 100px;
     background-color: var(--eerie-black-color);
 }
 
-.person-online .heading {
-    margin: 0 200px 50px;
-    font-size: 3.5rem;
+.studio-home-info {
+    display: block;
+    margin: 0 auto;
+    padding: 0 35px;
+    max-width: 415px;
+}
+
+.studio-home-info .heading {
+    text-align: center;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--cultured-color);
 }
 
-.person-online .heading span {
+.studio-home-info .heading span {
     font-weight: normal;
     font-style: italic;
     text-transform: none;
     color: var(--imperial-red-color);
 }
 
-.person-online p {
-    width: 30%;
-    margin: 0 200px 100px;
-    font-size: 1.2rem;
+.studio-home-info p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
     line-height: 25px;
     color: var(--cultured-color);
 }
 
-.person-online p span {
+.studio-home-info p span {
     line-height: 50px;
     color: var(--imperial-red-color);
 }
 
+.person-online .classes-container {
+    background-color: var(--cultured-color);
+}
+
 .person-online .classes {
-    padding: 150px 100px 10px;
+    display: block;
+    margin: 0 auto;
+    max-width: 415px;
+    padding: 150px 35px 50px;
     background-color: var(--cultured-color);
 }
 
 .person-online .class {
     display: flex;
     align-items: center;
-    margin: 20px 100px;
     border-top: 1px solid var(--eerie-black-color);
 }
 
 .person-online .name {
-    width: 50%;
-    margin: 50px 0 50px 50px;
-    font-size: 2.5rem;
+    width: 45%;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -509,22 +526,24 @@ aside li a span {
 }
 
 .person-online .duration {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin-bottom: 10px;
 }
 
 .person-online .price {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 .person-online a {
-    width: 15%;
-    padding: 15px;
+    font-size: 0.7rem;
+    width: 25%;
+    padding: 6px;
+    margin: 30px 0;
     text-align: center;
     text-decoration: none;
     color: var(--cultured-color);
     background-color: var(--imperial-red-color);
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .class-link {
@@ -532,11 +551,11 @@ aside li a span {
 }
 
 .class-link a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 50px;
     margin-bottom: 20px;
     padding: 0;
-    width: 50%;
+    width: 83%;
     border: none;
     color: var(--rich-black-color);
     background-color: unset;
@@ -548,18 +567,26 @@ aside li a span {
 }
 
 .in-studio img {
-    float: right;
-    margin-top: -200px;
-    margin-right: 100px;
+    display: block;
+    position: relative;
+    top: 100px;
+    width: 75%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -50px;
     border-radius: 5px 150px / 140px;
 }
 
 .at-home img {
-    float: right;
-    margin-top: -200px;
-    margin-right: 100px;
+    display: block;
+    position: relative;
+    top: 70px;
+    width: 75%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -30px;
     border-radius: 200px 200px 10px 10px;
-} */
+}
 
 /* Plans page styling */
 .plans-container {
@@ -867,7 +894,7 @@ aside li a span {
     transform: rotate(40deg);
 }
 
-.befit-logo {
+.signin-header .befit-logo {
     font-size: 1.8rem;
     text-decoration: none;
 }
