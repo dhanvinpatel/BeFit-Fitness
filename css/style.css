@@ -62,7 +62,7 @@ header .main-navigation {
 header nav .close-button {
     position: absolute;
     right: 5px;
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px;
     color: var(--eerie-black-color);
 }
@@ -76,16 +76,19 @@ header nav {
     overflow-x: hidden;
     height: 100vh;
     transition: 0.5s;
-    background-color: #FFFFFF;
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: var(--cultured-color);
 }
 
 header nav ul {
+    position: relative;
+    top: 10%;
     list-style-type: none;
 }
 
 header nav li {
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 10px;
 }
 
 header nav li:first-child {
@@ -94,8 +97,52 @@ header nav li:first-child {
 
 header nav a {
     color: var(--eerie-black-color);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
+    border-bottom: 1px solid var(--eerie-black-color);
+}
+
+.menu-heading {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--imperial-red-color);
+    background-color: var(--eerie-black-color);
+}
+
+.member-account {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.account-options {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 415px;
+    margin-bottom: 30px;
+}
+
+.account-options div {
+    text-align: center;
+    width: 35%;
+    max-width: 128px;
+}
+
+.account-options div a {
+    display: block;
+    padding: 8px 5px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    color: var(--cultured-color);
+    background-color: var(--imperial-red-color);
+    border: 2px solid var(--imperial-red-color);
 }
 
 .login-media {
@@ -104,12 +151,11 @@ header nav a {
 
 /* Footer styling */
 footer {
-    width: 100%;
     height: auto;
     top: 305px;
     padding: 30px 20px 20px;
     position: relative;
-    font-family: sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     color: var(--cultured-color);
     background-color: var(--rich-black-color);
     border: 1px solid var(--rich-black-color);
@@ -121,8 +167,9 @@ footer {
 
 .company-info {
     display: grid;
+    justify-content: space-evenly;
     column-gap: 10px;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
         "hours menu"
