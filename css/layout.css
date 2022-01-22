@@ -1,5 +1,712 @@
-/* Sign in page responsive styling */
-@media only screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+    /* Navigation bar styling */
+    header .main-navigation {
+        display: none;
+    }
+
+    nav .close-button, nav .menu-heading, 
+    nav .member-account {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        padding: 0 20px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        z-index: 1;
+        font-size: 1.1rem;
+        background-color: var(--rich-black-color);
+    }
+    
+    header nav ul {
+        color: green;
+        display: flex;
+        list-style-type: none;
+    }
+    
+    header nav li {
+        display: inline-block;
+        padding: 20px 30px;
+        margin-right: 10px;
+    }
+    
+    header nav li a:hover, header nav li a:focus {
+        color: var(--imperial-red-color);
+    }
+    
+    header nav a {
+        color: var(--cultured-color);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        padding: 1em;
+        margin: -2em;
+    }
+    
+    .login-media {
+        color: var(--cultured-color);
+        display: flex;
+    }
+    
+    .login-media div {
+        margin-left: 20px;
+    }
+    
+    .login a {
+        color: var(--cultured-color);
+        text-decoration: none;
+    }
+    
+    .login i {
+        margin-right: 10px;
+    }
+    
+    .login-media a:visited {
+        text-decoration: none;
+    }
+    
+    .current {
+        color: var(--imperial-red-color);
+    }
+    
+    /* Footer styling */
+    footer {
+        height: auto;
+        top: 0;
+        padding: 80px 5% 30px 5%;
+        position: relative;
+    }
+    
+    .company-info {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 2fr 2fr 2fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        column-gap: 20px;
+        grid-template-areas: 
+            "logo hours contact menu"
+            "copyright copyright copyright copyright";
+    }
+
+    .company-info .title {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+
+    .content-height {
+        font-size: 0.9rem;
+    }
+
+    .company-info .company-name-social {
+        display: block;
+        margin: auto;
+    }
+
+    .company-name-social hr {
+        display: none;
+    }
+
+    .company-info .company-contact {
+        margin: 0;
+    }
+
+    .company-info .fitness-name {
+        margin-top: 0;
+        text-align: initial;
+        font-size: 2rem;
+    }
+
+    .social-media div {
+        font-size: 1rem;
+        padding-right: 10px;
+    }
+
+    footer hr {
+        margin-top: 5%;
+    }
+    
+    .copyrights {
+        font-size: 0.9rem;
+    }
+
+    /* Sidebar social media styling */
+    aside nav {
+        width: 40px;
+        top: 300px;
+    }
+    
+    aside li {
+        font-size: 0.9rem;
+        height: 45px;
+    }
+    
+    aside li a {
+        width: 100%;
+        transition: all 0.4s ease;
+    }
+    
+    aside li a i {
+        padding-top: 15px;
+        margin-left: 5px;
+    }
+    
+    aside li a span {
+        font-size: 1.1rem;
+        margin-left: 50px;
+        padding-top: 12px;
+    }
+    
+    aside a:hover, aside a:focus {
+        outline: none;
+        width: 140px;
+    }
+    
+    aside li a:hover span, aside li a:focus span {
+        display: block;
+    }
+    
+    /* Home page styling */
+    .home-container {
+        position: relative;
+        height: 100vh;
+        top: 0;
+        background-attachment: fixed;
+        background-position: top center;
+        background-color: var(--eerie-black-color);
+    }
+    
+    .home-content {
+        width: 640px;
+        margin-left: 12px;
+        position: fixed;
+    }
+    
+    .home-content .fitness-moto {
+        max-width: none;
+        margin-top: 40px;
+        font-size: 4rem;
+    }
+    
+    .home-content .fitness-name {
+        display: block;
+        margin-left: 20px;
+        margin: 40px 0 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        word-spacing: 10px;
+        color: var(--imperial-red-color);
+    }
+    
+    .classes-info {
+        max-width: none;
+        width: 50%;
+        font-size: 1.3rem;
+    }
+    
+    .classes-option {
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+    }
+    
+    .classes-option a {
+        display: inline-block;
+        width: 165px;
+        text-align: center;
+        font-size: 1.1rem;
+        color: var(--rich-black-color);
+        text-decoration: none;
+        background-color: var(--imperial-red-color);
+        border-radius: 5px;
+        padding: 14px;
+    }
+    
+    .classes-option a:hover, .classes-option a:focus {
+        color: var(--cultured-color);
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        top: 0;
+        height: auto;
+        position: relative;
+        color: var(--cultured-color);
+        background-color: var(--eerie-black-color);
+    }
+    
+    .content-first {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin-top: 70px;
+        padding: 20px 0;
+    }
+
+    .content-first > div {
+        min-width: 372px;
+    }
+    
+    .content-first img {
+        min-width: 370px;
+        width: 40%;
+        margin-right: 10%;
+        border-radius: 5%;
+        box-shadow: 15px 15px 15px var(--rich-black-color);
+    }
+    
+    .training-info {
+        margin-top: 100px;
+    }
+    
+    .training-info div {
+        font-weight: bold;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    .training-info .training-heading {
+        width: 100%;
+        font-size: 3.5rem;
+    }
+    
+    .training-info span {
+        font-weight: normal;
+        font-style: italic;
+        text-transform: none;
+        color: var(--imperial-red-color);
+    }
+    
+    .training-info p {
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    
+    .training-record {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+    
+    .record span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    .record span:first-of-type {
+        font-size: 1.8rem;
+        font-style: italic;
+    }
+    
+    .content-second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 85%;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        padding: 20px 0;
+    }
+    
+    .choice-heading {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    
+    .choice-heading span {
+        text-transform: none;
+        font-style: italic;
+    }
+    
+    .choice-heading:last-child {
+        text-transform: uppercase;
+    }
+    
+    .content-second p {
+        font-size: 1.2rem;
+        line-height: 30px;
+        margin-bottom: 80px;
+    }
+    
+    .class-choice {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+    
+    .class-select {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        padding: 4% 10%;
+        border-radius: 0 30px 0 30px;
+        background-color: var(--imperial-red-color);
+        box-shadow: 15px 15px 15px var(--rich-black-color);
+    }
+    
+    .class-select span {
+        height: 75px;
+        font-size: 2rem;
+        font-style: italic;
+        margin-bottom: 30px;
+    }
+    
+    .class-select a {
+        min-width: 175px;
+        color: var(--eerie-black-color);
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: var(--cultured-color);
+        border-radius: 0 30px 0 30px;
+    }
+    
+    .class-select a:hover, .class-select a:focus {
+        color: var(--cultured-color);
+        background-color: var(--eerie-black-color);
+    }
+    
+    /* Classes page styling */
+    .person-online {
+        padding-top: 60px;
+    }
+    
+    .studio-home-info {
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        margin: initial;
+        padding: initial;
+        max-width: none;
+    }
+
+    .studio-home-info .heading {
+        margin: 0 200px;
+        font-size: 3.5rem;
+        text-align: left;
+        white-space: nowrap;
+    }
+    
+    .studio-home-info p {
+        width: 460px;
+        text-align: left;
+        margin: 0 200px 100px;
+        font-size: 1.1rem;
+    }
+    
+    .studio-home-info p span {
+        line-height: 100px;
+    }
+
+    .at-home .studio-home-info p {
+        margin-top: 50px;
+    }
+
+    .person-online .classes {
+        padding: 22% 5% 5%;
+        max-width: none;
+    }
+
+    .person-online .class {
+        margin: 0 100px;
+    }
+    
+    .person-online .name {
+        width: 50%;
+        margin: 50px 0 50px 50px;
+        font-size: 2.5rem;
+    }
+    
+    .person-online .duration {
+        font-size: 1.2rem;
+    }
+    
+    .person-online .price {
+        font-size: 1.2rem;
+    }
+    
+    .person-online a {
+        font-size: 1rem;
+        width: 15%;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+    .class .duration-price + a:hover, .class .duration-price + a:focus {
+        background-color: #a70104;
+    }
+    
+    .class-link a {
+        font-size: 1.2rem;
+        width: 50%;
+    }
+    
+    .class-link a:hover {
+        color: var(--rich-black-color);
+    }
+    
+    .in-studio img {
+        float: right;
+        margin-top: -200px;
+        margin-right: 100px;
+    }
+    
+    .at-home img {
+        float: right;
+        margin-top: -200px;
+        margin-right: 100px;
+    }
+    
+    /* Plans page styling */
+    .plans-container {
+        padding-bottom: 10%;
+    }
+    .plans-heading {
+        padding: 60px 0 90px;
+    }
+    
+    .membership-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: none;
+        column-gap: 60px;
+        row-gap: 0;
+        width: 90%;
+        max-width: none;
+    }
+    
+    .silver-plan, .gold-plan, .platinum-plan {
+        width: 100%;
+    }
+    
+    .plan-upper {
+        font-size: 1rem;
+        height: 358px;
+    }
+
+    .plan-upper .suitable-member {
+        height: 28px;
+    }
+    
+    .plan-lower {
+        font-size: 1rem;
+        line-height: 4rem;
+    }
+    
+    .plan-name {
+        font-size: 1.7rem;
+        height: 123px;
+    }
+    
+    .plan-price {
+        font-size: 3rem;
+    }
+    
+    .dollar-sign {
+        font-size: 1.8rem;
+    }
+    
+    .price-month {
+        font-size: 1rem;
+    }
+    
+    .plan-select-btn {
+        font-size: 1.5rem;
+        box-shadow: inset 0 0 0 0 var(--imperial-red-color);
+        transition: 0.7s ease-out;
+    }
+    
+    .plan-select-btn:hover {
+        color: var(--imperial-red-color);
+        box-shadow: inset 220px 0 0 0 var(--cultured-color);
+        cursor: pointer;
+    }
+    
+    .plan-select-btn:focus {
+        outline: none;
+        color: var(--imperial-red-color);
+        box-shadow: inset 220px 0 0 0 var(--cultured-color);
+    }
+    
+    .gold-plan .plan-name {
+        height: 84px;
+    }
+    
+    /* About page styling */
+    .about-befit {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 200px;
+        align-items: center;
+        color: var(--cultured-color);
+        background-color: var(--eerie-black-color);
+    }
+    
+    .about-heading {
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .about-befit p {
+        font-size: 1rem;
+        line-height: 25px;
+        text-align: center;
+    }
+    
+    .befit-story {
+        display: grid;
+        width: 80%;
+        max-width: none;
+        grid-template-columns: 1fr 1fr;
+        background-color: transparent;
+    }
+    
+    .story {
+        height: 676px;
+        width: 512px;
+        max-width: none;
+        padding: 0 60px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .story div {
+        display: block;
+        font-size: 2rem;
+        margin: 70px 0 30px;
+    }
+    
+    .story p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .befit-story img {
+        width: 452px;
+    }
+    
+    .values {
+        padding: 150px 0;
+    }
+    
+    .core-values {
+        width: 70%;
+    }
+    
+    .values-heading {
+        font-size: 2.5rem;
+        padding: 80px;
+    }
+    
+    .values-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        row-gap: 10%;
+        column-gap: 10%;
+    }
+    
+    .values-container .item {
+        padding: 0;
+    }
+
+    .item i{
+        font-size: 4rem;
+    }
+    
+    .item .item-heading {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+    
+    .values-container .item p {
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+
+    .max-expand {
+        max-width: none;
+    }
+
+    [tabindex] {
+        outline: none;
+    }
+    
+    /* Contact page styling */
+    .contact {
+        max-width: 45%;
+    }
+    
+    .contact-heading {
+        padding: 70px 0 40px;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+    }
+    
+    .contact-info label {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-info .message textarea {
+        resize: none;
+    }
+    
+    .contact-info input[type=submit] {
+        margin-top: 40px;
+        margin-bottom: 30%;
+    }
+    
+    .contact-info input[type=submit]:hover {
+        background-color: #a70104;
+        cursor: pointer;
+    }
+    
+    .contact-info input[type=submit]:focus {
+        background-color: #a70104;
+    }
+    
+    /* Social media links styling */
+    .youtube {
+        color: var(--youtube-color);
+    }
+    
+    .instagram {
+        color: var(--instagram-color);
+    }
+    
+    .twitter {
+        color: var(--twitter-color);
+    }
+    
+    .facebook {
+        color: var(--facebook-color);
+    }
+
+    /* Sign in page styling */
     .signin-page {
         margin: 0;
         padding: 0;
