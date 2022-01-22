@@ -20,9 +20,10 @@ html {
 }
 
 body {
-    min-width: 100%;
+    width: 100%;
     padding-top: 50px;
     overflow: scroll;
+    overflow-x: hidden;
     background-color: var(--cultured-color);
 }
 
@@ -158,7 +159,6 @@ footer {
     font-family: 'Hind Siliguri', sans-serif;
     color: var(--cultured-color);
     background-color: var(--rich-black-color);
-    border: 1px solid var(--rich-black-color);
 }
 
 .footer-setting {
@@ -323,13 +323,11 @@ aside li a span {
     position: fixed;
     background-image: url(../images/home-background.jpg);
     background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover;
     color: var(--rich-black-color);
 }
 
 .home-content {
-    height: 100%;
     display: flex;
     flex-direction: column;
     width: 65%;
@@ -670,7 +668,7 @@ aside li a span {
     font-size: 0.9rem;
     color: var(--rich-black-color);
     margin: 20px 0;
-    line-height: 40px;
+    line-height: 3rem;
 }
 
 .plan-name {
@@ -822,7 +820,7 @@ aside li a span {
     line-height: 30px;
 }
 
-.side-expand {
+.max-expand {
     max-width: 412px;
 }
 
@@ -846,7 +844,7 @@ aside li a span {
 }
 
 .contact-info label {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 5px;
 }
 
