@@ -9,6 +9,7 @@
     --eerie-black-color: #161A1D;
     --imperial-red-color: #E5383B;
     --cultured-color: #F5F3F4;
+    --button-dark: #a70104;
     --youtube-color: #FF0000;
     --instagram-color: #F77737;
     --twitter-color: #1DA1F2;
@@ -22,9 +23,13 @@ html {
 body {
     width: 100%;
     padding-top: 50px;
-    overflow: scroll;
     overflow-x: hidden;
+    overscroll-behavior: none;
     background-color: var(--cultured-color);
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* Navigation bar styling */
@@ -79,6 +84,7 @@ header nav {
     transition: 0.5s;
     font-family: 'Hind Siliguri', sans-serif;
     background-color: var(--cultured-color);
+    transition: all 0.1ms ease-out;
 }
 
 header nav ul {
@@ -331,6 +337,7 @@ aside li a span {
     display: flex;
     flex-direction: column;
     width: 65%;
+    margin-top: 2%;
     margin-left: 10px;
     align-items: center;
 }
