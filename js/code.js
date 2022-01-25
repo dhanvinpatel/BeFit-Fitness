@@ -1,6 +1,7 @@
 // Open navigation bar.
 function openNavigation() {
     document.getElementById("sideNavigation").style.width = "100%";
+    document.getElementById("sideNavigation").style.transition = "all 0.5s ease-out";
     document.getElementById("memberAccount").style.display = "flex";
     document.body.style.overflow = "hidden";
     document.body.style.height = "100%"
